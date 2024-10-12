@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TemplateApp</string>
+
+    <string name="frame_image_button">Frame Image Button</string>
 </resources>

@@ -5,16 +5,15 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.cwbsoft.templateapp.ui.theme.TemplateAppTheme
+import com.cwbsoft.templateapp.views.composables.FrameImageCardButton
+import com.cwbsoft.templateapp.views.screens.DummyScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,20 +31,5 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MyApp(){
-    /*
-    val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = "DummyScreenWithParameters"){
-        composable ( "firstscreen" ){
-            tScreen {
-                navController.navigate(route = "secondscreen")
-            }
-        }
-        composable ( "secondscreen" ){
-            SecondScreen {
-                navController.navigate(route = "firstscreen")
-            }
-        }
-    }
-
-     */
+    DummyScreen()
 }
