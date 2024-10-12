@@ -5,14 +5,12 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
+import androidx.compose.ui.unit.dp
 import com.cwbsoft.templateapp.ui.theme.TemplateAppTheme
-import com.cwbsoft.templateapp.views.composables.FrameImageCardButton
 import com.cwbsoft.templateapp.views.screens.DummyScreen
 
 class MainActivity : ComponentActivity() {
@@ -31,5 +29,5 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MyApp(){
-    DummyScreen()
+    DummyScreen(Modifier.padding(24.dp))
 }

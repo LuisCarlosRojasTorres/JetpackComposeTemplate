@@ -1,18 +1,25 @@
 package com.cwbsoft.templateapp.views.screens
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.cwbsoft.templateapp.views.composables.FrameImageCardButton
+import androidx.compose.ui.unit.dp
+import com.cwbsoft.templateapp.views.composables.CardButton
 
 @Composable
-fun DummyScreen()
+fun DummyScreen(modifier: Modifier)
 {
-    FrameImageCardButton()
+    Column (modifier = Modifier.padding(24.dp)){
+        CardButton()
+    }
+
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DummyScreenPreview()
 {
-    DummyScreen()
+    DummyScreen(Modifier.padding(24.dp))
 }
