@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import com.cwbsoft.templateapp.R
 import com.cwbsoft.templateapp.views.composables.CardButton
 import com.cwbsoft.templateapp.views.composables.ElevatedCardButton
+import com.cwbsoft.templateapp.views.composables.FrameImageButton
 
 
 @Composable
@@ -25,6 +26,12 @@ fun DummyScreen(modifier: Modifier)
         Spacer(modifier = Modifier.height(12.dp))
 
         ElevatedCardButton(
+            content = stringResource(id = R.string.dummy_content))
+
+        Spacer(modifier = Modifier.height(12.dp))
+
+        FrameImageButton(
+            title = "FrameImageButton",
             content = stringResource(id = R.string.dummy_content))
     }
 

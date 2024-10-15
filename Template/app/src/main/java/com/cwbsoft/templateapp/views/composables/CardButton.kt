@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -43,11 +44,13 @@ fun CardButton(title: String = "DummyTitle",
         ),
         modifier = Modifier
             .fillMaxWidth()
-            .height(120.dp),
+            .height(150.dp),
         onClick = {dummyToast(mContext, title, 1)}
     ){
-        Text(text = title, fontWeight = FontWeight.Bold, fontSize = 20.sp)
-        Text(text = content, fontSize = 14.sp)
+        Text(text = title, fontWeight = FontWeight.Bold, fontSize = 20.sp,
+            modifier = Modifier.padding(start = 8.dp, end = 8.dp, top = 8.dp, bottom = 8.dp))
+        Text(text = content, fontSize = 14.sp,
+            modifier = Modifier.padding(start = 8.dp, end = 8.dp, top = 8.dp))
     }
 
 }
@@ -67,11 +70,13 @@ fun ElevatedCardButton(title: String = "ElevatedDummyTitle",
         ),
         modifier = Modifier
             .fillMaxWidth()
-            .height(120.dp),
+            .height(150.dp),
         onClick = {dummyToast(mContext, title, 1)}
     ){
-        Text(text = title, fontWeight = FontWeight.Bold, fontSize = 20.sp)
-        Text(text = content, fontSize = 14.sp)
+        Text(text = title, fontWeight = FontWeight.Bold, fontSize = 20.sp,
+            modifier = Modifier.padding(start = 8.dp, end = 8.dp, top = 8.dp, bottom = 8.dp))
+        Text(text = content, fontSize = 14.sp,
+            modifier = Modifier.padding(start = 8.dp, end = 8.dp, top = 8.dp))
     }
 }
 
@@ -80,17 +85,19 @@ fun FrameImageButton(title: String = "DummyTitle", content: String = "DummyConte
 
     val mContext = LocalContext.current
 
-    Column (modifier = Modifier
-        .border(BorderStroke(1.dp, Color.Black))
-        .clip(RoundedCornerShape(10.dp))){
+    Column (modifier = Modifier.clickable { dummyToast(mContext, title, 1) }
+        .border(BorderStroke(1.dp, Color.Black),RoundedCornerShape(20.dp))
+        .clip(RoundedCornerShape(20.dp))){
 
         Image(painterResource(id = R.drawable.background_purple),
             contentDescription = "Lobo lobo lobo",
             contentScale = ContentScale.Fit
         )
 
-        Text(text = title, fontWeight = FontWeight.Bold, fontSize = 20.sp)
-        Text(text = content, fontSize = 14.sp)
+        Text(text = title, fontWeight = FontWeight.Bold, fontSize = 20.sp,
+            modifier = Modifier.padding(start = 8.dp, end = 8.dp, top = 8.dp))
+        Text(text = content, fontSize = 14.sp,
+            modifier = Modifier.padding(start = 8.dp, end = 8.dp, top = 8.dp, bottom = 8.dp))
     }
 
 }
