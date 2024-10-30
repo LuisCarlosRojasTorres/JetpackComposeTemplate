@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.cwbsoft.templateapp.ui.theme.TemplateAppTheme
 import com.cwbsoft.templateapp.views.screens.DummyScreen
@@ -27,6 +28,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Preview(showBackground = true)
 @Composable
 fun MyApp(){
     DummyScreen(Modifier.padding(24.dp))
