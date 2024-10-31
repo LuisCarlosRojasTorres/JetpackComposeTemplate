@@ -3,4 +3,10 @@
 
     <string name="dummy_title">Dummy Title</string>
     <string name="dummy_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+    <string name="money">Dinheiro</string>">
+    <string name="family">Família</string>
+    <string name="love">Amor</string>
+    <string name="health">Saúde</string>
+    <string name="work">Trabalho</string>
+
 </resources>
