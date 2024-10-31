@@ -21,6 +21,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.cwbsoft.templateapp.R
+import com.cwbsoft.templateapp.ui.theme.Purple80
 import com.cwbsoft.templateapp.views.composables.CardButton
 import com.cwbsoft.templateapp.views.composables.ElevatedCardButton
 import com.cwbsoft.templateapp.views.composables.FrameImageButton
@@ -38,7 +39,11 @@ import com.cwbsoft.templateapp.views.composables.sliderwithcustomthumb.SliderWit
 fun DummyScreen(modifier: Modifier)
 {
     Scaffold(
-        bottomBar = { ThreeElementsBottomAppBar() }
+        bottomBar = { ThreeElementsBottomAppBar(
+            R.drawable.sad, "As inimigas",
+            R.drawable.home, "Main",
+            R.drawable.favorite, "Amor",
+            Purple80) }
     )
     { innerPadding ->
         Column (
