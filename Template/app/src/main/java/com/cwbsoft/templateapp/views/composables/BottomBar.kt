@@ -71,12 +71,6 @@ fun ThreeElementsBottomAppBar() {
                     contentDescription = "Localized description",
                 )
             }
-            IconButton(onClick = { /* do something */ }) {
-                Icon(
-                    Icons.Filled.AccountBox,
-                    contentDescription = "Localized description",
-                )
-            }
         }
     )
 }
