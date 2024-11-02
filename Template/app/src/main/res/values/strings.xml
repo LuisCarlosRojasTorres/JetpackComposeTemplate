@@ -8,5 +8,6 @@
     <string name="love">Amor</string>
     <string name="health">Saúde</string>
     <string name="work">Trabalho</string>
+    <string name="hello">Olá... </string>
 
 </resources>
